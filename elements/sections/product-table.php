@@ -1,0 +1,127 @@
+<section class="section lists pb-0 mb--negative">
+    <div class="bg">
+        <div class="bg-overlay"></div>
+    </div>
+    <div class="container">
+        <div id="lists" class="row">
+            <div class="col col-12 lists__title">
+                <div class="col-inner">
+                    <h2>Зубочистки бамбуковые в прозрачой в индивидуальной упаковке</h2>
+                </div>
+            </div>
+            <div class="col col-12">
+                <div class="lists__table">
+                    <div class="col-inner table__wrapper">
+                        <div class="table__wrapper_1">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th class="hide-for-medium"><span class="characteristic-filter">Форма
+                                                выпуска</span></th>
+                                        <th class="hide-for-medium"><span
+                                                class="characteristic-filter">Размер</span></th>
+                                        <th class="hide-for-medium"><span
+                                                class="characteristic-filter">Объем</span></th>
+                                        <th class="hide-for-medium"><span
+                                                class="characteristic-filter">Состояние</span></th>
+                                        <th class="show-for-medium"><span
+                                                class="characteristic-filter">Характеристики</span></th>
+                                        <th class="cell-price"><span class="characteristic-filter">Цена</span>
+                                        </th>
+                                        <th class="cell-icons"></th>
+                                        <th class="cell-order"></th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+
+                        <div class="table__wrapper_2">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="img">
+                                                <div class="image-cover">
+                                                    <img src="./img/product3.png" alt="">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="hide-for-medium">Белые</td>
+                                        <td class="hide-for-medium">Характеристика</td>
+                                        <td class="hide-for-medium">1</td>
+                                        <td class="hide-for-medium">Характеристика</td>
+                                        <td class="show-for-medium cell-common">Белые, Характеристика,
+                                            Характеристика, Характеристика</td>
+                                        <td class="cell-price">
+                                            <div class="prices">
+                                                <div class="price price_new">
+                                                    <p class="num">1500,00</p>
+                                                    <p class="symbol">₽</p>
+                                                </div>
+                                                <div class="price price_old">
+                                                    <p class="num">1700,00</p>
+                                                    <p class="symbol">₽</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        
+                                        <td class="cell-icons">
+                                            <div class="table__icon-wrapper">
+                                                <button class="compare icon-btn product-btn" type="button">
+                                                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.5 24.5V16.5H7.5V24.5H1.5Z"
+                                                            stroke="#BBBBBB" />
+                                                        <path d="M9.5 24.5V1.5H15.5V24.5H9.5Z"
+                                                            stroke="#BBBBBB" />
+                                                        <path d="M17.5 24.5V9.5H23.5V24.5H17.5Z"
+                                                            stroke="#BBBBBB" />
+                                                    </svg>
+                                                </button>
+                                                <button class="save icon-btn product-btn" type="button">
+                                                    <svg width="20" height="26" viewBox="0 0 20 26" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M2 1.5H1.5V2V23V23.9729L2.29106 23.4066L10 17.8877L17.7089 23.4066L18.5 23.9729V23V2V1.5H18H2Z"
+                                                            stroke="#BBBBBB" stroke-linecap="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </td>
+
+                                        <td class="cell-order">
+                                            <div class="table__order">
+                                                <p>Под заказ</p>
+                                                <button type="button" data-id="quantity"
+                                                    class="button icon-button popup-btn popup-btn">
+                                                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <ellipse cx="25" cy="24.9839" rx="25" ry="24.9839"
+                                                            fill="#1B1B1B" />
+                                                        <path
+                                                            d="M34 18.75H18.3043L20.2319 27.5L34 25.4167V18.75Z"
+                                                            fill="white" />
+                                                        <path
+                                                            d="M15 15H17.4783L18.3043 18.75M33.587 30H20.7826L20.2319 27.5M18.3043 18.75H34V25.4167L20.2319 27.5M18.3043 18.75L20.2319 27.5"
+                                                            stroke="white" stroke-linecap="round" />
+                                                        <path
+                                                            d="M23.2611 35.5C24.2257 35.5 25.0002 34.7124 25.0002 33.75C25.0002 32.7876 24.2257 32 23.2611 32C22.2965 32 21.522 32.7876 21.522 33.75C21.522 34.7124 22.2965 35.5 23.2611 35.5Z"
+                                                            fill="white" stroke="white" />
+                                                        <path
+                                                            d="M31.5214 35.5C32.486 35.5 33.2605 34.7124 33.2605 33.75C33.2605 32.7876 32.486 32 31.5214 32C30.5568 32 29.7822 32.7876 29.7822 33.75C29.7822 34.7124 30.5568 35.5 31.5214 35.5Z"
+                                                            fill="white" stroke="white" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

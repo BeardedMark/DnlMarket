@@ -17,17 +17,16 @@
     <body>
         <?include_once('elements/header.php')?>
 
-        <main>
-            <?include_once('pages/policy.php')?>
-        </main>
-
-        <!-- <nav>
+        <nav>
             <div class="container">
                 <?include_once('elements/bread.php')?>
-                <?include_once('elements/form.php')?>
             </div>
-        </nav> -->
+        </nav>
 
+        <main>
+            <?include_once('pages/home.php')?>
+        </main>
+        
         <?include_once('elements/footer.php')?>
 
         <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>

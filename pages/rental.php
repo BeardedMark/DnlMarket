@@ -12,6 +12,8 @@
                         </div>
                     </div>
                 </div>
+                
+                <?include_once('elements/form.php')?>
             </div>
         </div>
     </div>

@@ -16,6 +16,7 @@
 
     <body>
         <?include_once('elements/header.php')?>
+        <?include_once('elements/popups/header-catalog.php')?>
 
         <nav>
             <div class="container">
@@ -24,12 +25,12 @@
         </nav>
 
         <main>
-            <?include_once('pages/home.php')?>
+            <?include_once('pages/news.php')?>
         </main>
         
         <?include_once('elements/footer.php')?>
 
-        <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+        <!-- <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript" src="js/inputmask.js"></script>
         <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
@@ -40,6 +41,6 @@
         <script src="js/more-popup.min.js"></script>
         <script src="js/index-script.min.js"></script>
         <script src="js/stories-lightbox.min.js"></script>
-        <script src="js/script.js"></script>
+        <script src="js/script.js"></script> -->
     </body>
 </html>

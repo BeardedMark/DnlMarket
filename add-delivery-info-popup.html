@@ -1,0 +1,51 @@
+<div id="popup-add-delivery-info" class="popup">
+    <div class="popup__wrapper_outer">
+        <div class="popup__wrapper_inner">
+            <div class="popup__wrapper">
+                <div class="popup__close"></div>
+                <h3 class="pb">Заполните информацию о доставке</h3>
+
+                <form action="">
+                    <div class="wrapper add-delivery-info">
+                        <div class="wrapper__inner">
+                            <div class="row">
+                                <div class="col col-12">
+                                    <div class="col-inner">
+                                        <p class="font-normal mb--mini">Введите адрес доставки<span class="primary-text">*</span></p>
+                                        <input type="text" name="my_delivery_address" class="add-delivery-info__input" required>
+                                    </div>
+                                </div>
+                                <div class="col col-12">
+                                    <div class="col-inner">
+                                        <p class="font-normal mb--mini">Часы работы</p>
+                                        <input type="text" name="my_office_hours" class="add-delivery-info__input" placeholder="чч:мм-чч:мм">
+                                    </div>
+                                </div>
+                                <div class="col col-12">
+                                    <div class="col-inner">
+                                        <p class="font-normal mb--mini">Часы приемки товара</p>
+                                        <input type="text" name="my_receipt_hours" class="add-delivery-info__input" placeholder="чч:мм-чч:мм">
+                                    </div>
+                                </div>
+                                <div class="col col-12 pb-0">
+                                    <div class="col-inner">
+                                        <p class="font-normal mb--mini">Перерыв</p>
+                                        <input type="text" name="my_break_hours" class="add-delivery-info__input" placeholder="чч:мм-чч:мм">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="add-delivery-info__buttons">
+                            <button type="button" class="button light-btn add-delivery-info-cansel">
+                                <span>Отмена</span>
+                            </button>
+                            <button type="submit" class="button dark-btn disabled add-delivery-info-submit" data-result="success">
+                                <span>Добавить</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,110 @@
+<div id="popup-quantity" class="popup">
+    <div class="popup__wrapper_outer">
+        <div class="popup__wrapper_inner">
+            <div class="popup__wrapper">
+                <div class="popup__close"></div>
+                <h3 class="pb">Выберите количество</h3>
+                <div class="wrapper quantity">
+                    <form action="" class="quantity__form">
+                        <div class="quantity__form_inner">
+                            <div class="quantity__item mb">
+                                <p class="quantity__name font-light">Штук</p>
+                                <div class="quantity__wrapper">
+                                    <div class="choose-quantity">
+                                        <div class="choose-quantity__sign choose-quantity__sign_minus"></div>
+                                        <input class="choose-quantity__input" type="number" id="piece" name="piece" min="1000000" value="1000000">
+                                        <div class="choose-quantity__sign choose-quantity__sign_plus"></div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="quantity__separator">
+                                            <p>*</p>
+                                        </div>
+                                        <div class="prices quantity__prices">
+                                            <div class="price price_new">
+                                                <p class="num current">2,5</p>
+                                                <p class="symbol">₽</p>
+                                            </div>
+                                            <div class="price price_old">
+                                                <p class="num">3,5</p>
+                                                <p class="symbol">₽</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="quantity__item mb">
+                                <p class="quantity__name font-light">Упаковок (*<span>600</span>)</p>
+                                <div class="quantity__wrapper">
+                                    <div class="choose-quantity">
+                                        <div class="choose-quantity__sign choose-quantity__sign_minus"></div>
+                                        <input class="choose-quantity__input" type="number" id="packages" name="packages" min="1" value="1">
+                                        <div class="choose-quantity__sign choose-quantity__sign_plus"></div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="quantity__separator">
+                                            <p>*</p>
+                                        </div>
+                                        <div class="prices quantity__prices">
+                                            <div class="price price_new">
+                                                <p class="num current">1500</p>
+                                                <p class="symbol">₽</p>
+                                            </div>
+                                            <div class="price price_old">
+                                                <p class="num">1700</p>
+                                                <p class="symbol">₽</p>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="quantity__item mb">
+                                <p class="quantity__name font-light">Мест (*<span>100</span>)</p>
+                                <div class="quantity__wrapper">
+                                    <div class="choose-quantity">
+                                        <div class="choose-quantity__sign choose-quantity__sign_minus"></div>
+                                        <input class="choose-quantity__input" type="number" id="places" name="places" min="1" value="1">
+                                        <div class="choose-quantity__sign choose-quantity__sign_plus"></div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="quantity__separator">
+                                            <p>*</p>
+                                        </div>
+                                        <div class="prices quantity__prices">
+                                            <div class="price price_new">
+                                                <p class="num current">1500</p>
+                                                <p class="symbol">₽</p>
+                                            </div>
+                                            <div class="price price_old">
+                                                <p class="num">1700</p>
+                                                <p class="symbol">₽</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <p class="font-light dark-grey-text mb">*Минимальная партия для заказа 10 шт.</p>
+                            <div class="quantity__total">
+                                <div class="quantity__total-text">
+                                    <h4>Сумма:</h4>
+                                </div>
+                                <div class="prices quantity__total-price">
+                                    <div class="price price_new">
+                                        <p class="num">00000,00</p>
+                                        <p class="symbol">₽</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <input type="submit" class="button dark-btn add-in-cart" value="Добавить в корзину" readonly>
+                        <input type="button" class="button dark-btn d-none" value="Ок" readonly>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

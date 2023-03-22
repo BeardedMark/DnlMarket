@@ -1,0 +1,47 @@
+<!-- Попап добавления контактного лица (Стр. оформления заказа) -->
+
+<div id="popup-edit-agent" class="popup">
+    <div class="popup__wrapper_outer">
+        <div class="popup__wrapper_inner">
+            <div class="popup__wrapper">
+                <div class="popup__close"></div>
+                <h3 class="pb">Редактировать</h3>
+
+                <form action="">
+                    <div class="wrapper edit-agent">
+                        <div class="wrapper__inner">
+                            <div class="row">
+                                <div class="col col-12">
+                                    <div class="col-inner">
+                                        <p class="font-normal mb--mini">ФИО<span class="primary-text">*</span></p>
+                                        <input type="text" name="my_fio" class="edit-agent__input" required>
+                                    </div>
+                                </div>
+                                <div class="col col-12">
+                                    <div class="col-inner">
+                                        <p class="font-normal mb--mini">Телефон<span class="primary-text">*</span></p>
+                                        <input type="tel" name="my_tel" class="edit-agent__input" required>
+                                    </div>
+                                </div>
+                                <div class="col col-12 pb-0">
+                                    <div class="col-inner">
+                                        <p class="font-normal mb--mini">E-mail<span class="primary-text">*</span></p>
+                                        <input type="email" name="my_email" class="edit-agent__input" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="edit-agent__buttons">
+                            <button type="button" class="button light-btn edit-agent-cansel">
+                                <span>Отмена</span>
+                            </button>
+                            <button type="submit" class="button dark-btn disabled edit-agent-submit" data-result="success">
+                                <span>Добавить</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

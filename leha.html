@@ -1,0 +1,231 @@
+<script>
+function addbas_cat(id,price_ed){
+	var popupQuantity = document.getElementById('popup-quantity');
+	popupQuantity.setAttribute('data-idtiov', id);
+	document.getElementById("price_new_c").textContent=price_ed;
+}
+
+function favorit_cat(id){ alert();
+	var popupFavorit = document.getElementById('popup-lists');
+	popupFavorit.setAttribute('data-idtov', id);
+	popupFavorit.setAttribute('data-action', 'addListCatalog');
+	openPopupLists();
+}
+
+function eventspisok(){
+	var popupFavorit = document.getElementById('popup-lists');
+	var action=popupFavorit.getAttribute('data-action');
+	var idtov=popupFavorit.getAttribute('data-idtov');
+	
+$checkbox = $('.userlist');
+		var list = [];
+            list = $.map($checkbox, function (el) {
+                if (el.checked) { return el.value; };
+            });
+
+
+
+	ajFavorite('id',idtov,list,1,'thislict','addListCatalog');
+}
+
+
+
+function compare(id,check){
+
+
+    if (check!='Y')
+        {
+        //Добавить
+        var AddedGoodId = id;
+            $.get("/ajax/compare.php",
+            { 
+                action: "ADD_TO_COMPARE_LIST", id: AddedGoodId},
+                function(data) {
+	        $("#compare_list_count").html(data);
+        	}
+        );
+        }
+    else
+       {
+        //Удалить
+        var AddedGoodId = id;
+            $.get("/ajax/compare.php",
+            { 
+                action: "DELETE_FROM_COMPARE_LIST", id: AddedGoodId},
+                function(data) {
+	        $("#compare_list_count").html(data);
+            }
+            );
+    }
+
+   
+   			var text='<h4 class="mb--half">Добавлен в список сравнения</h4><a href="/personal/cart/" class="button is-link"><span>Перейти</span></a>';
+				
+		//actListMenu.setAttribute('data-actab', actab);
+		var actions=document.getElementById("action-alert");
+		actions.innerHTML=text;
+		actionOk();
+}
+
+
+
+/* Ajax */
+function ajFavoritMas(mass,maslist,thislict,action)
+{
+	//var actab=document.getElementsByClassName('tabs-item activeTab')[0].getAttribute('id');
+    var param = "mass="+JSON.stringify(mass)+"&thislict="+thislict+"&action="+action+"&maslist="+maslist;
+	//document.getElementById('ew').textContent =param;
+    //alert(param);
+    $.ajax({
+        url:     '/local/components/allion/wishlist/wishlist.php', 
+        type:     "GET",
+        dataType: "html",
+        data: param,
+        success: function(response) { // Если Данные отправлены успешно
+            var result = $.parseJSON(response);
+            if(result == 1){ 
+                // alert('добавлен');
+            }
+            if(result == 2){
+              
+                // alert('удален');
+            }
+			//up(actab,action);			
+            //$("#tabs").load(location.href + " #ajax_tabs");	
+up(action);			
+        },
+		complete:function(response){
+		//	 ajatab();
+		//	moveToActiveTab();
+		 },
+        error: function(jqXHR, textStatus, errorThrown){ // Ошибка
+            console.log('Error: '+ errorThrown);
+        }
+     });
+}	
+
+
+function ajFavorite(id,idtov,list,quant,thislict,action)
+{
+/*	var popupListMenu=document.getElementById("ListMenu");
+	if(popupListMenu){
+		var actab=popupListMenu.getAttribute('data-idlist');
+	}*/
+
+    var param = "id="+id+"&list="+list+"&action="+action+"&quant="+quant+"&thislict="+thislict+"&idtov="+idtov;
+//console.log(param);
+//alert(param); 
+    $.ajax({
+        url:     '/local/components/allion/wishlist/wishlist.php', 
+        type:     "GET",
+        dataType: "html",
+        data: param,
+        success: function(response) { // Если Данные отправлены успешно
+            var result = $.parseJSON(response);
+            if(result == 1){ 
+                // alert('добавлен');
+            }
+            if(result == 2){
+              
+                // alert('удален');
+            }
+				if(thislict!='refrech.list'){
+
+					//	up(actab,action);				  
+up(action);
+				}else{
+				//	document.getElementById("CatalogListGroup").innerHTML = result;
+					
+				}			
+        },
+		 complete:function(response){
+			 
+			//ajatab();
+		//	moveToActiveTab();
+		 },
+        error: function(jqXHR, textStatus, errorThrown){ // Ошибка
+            console.log('Error: '+ errorThrown);
+        }
+     });
+}
+/* Ajax */
+
+function ajatab(){
+list_script();
+}
+
+function actionOk() {
+            let popup = $('#popup-in-cart');
+
+            popup.fadeIn('400');
+            popup.addClass('animate__slideInRight animate__animated');
+            popup.addClass('active');
+
+            setTimeout(() => {
+                if(popup.hasClass('active')) {
+                    popup.addClass('animate__slideOutRight');
+                    popup.fadeOut('400');
+
+                    setTimeout(() => {
+                        popup.removeClass('animate__slideInRight animate__animated animate__slideOutRight');
+                        popup.removeClass('active');
+                    }, 400);
+                }
+            }, 3000);
+        }
+		
+function closepp(){
+	 $('.popup__close').click();
+}
+		
+function up(action){
+	$("#tabs").load(location.href + " #ajax_tabs");
+closepp();
+	
+//list_script();
+
+	//$("#header_tabs").load(location.href + " #ajax_tabs_line");
+	var actListMenu=document.getElementById("tabs");
+	if(action){
+		
+		
+	switch (action) {
+		case 'addmastov':
+			var text='<h4 class="mb--half">Товар добавлен в корзину!</h4><a href="/personal/cart/" class="button is-link"><span>Перейти</span></a>';
+			break;
+		case 'copymastov':
+			var text='<h4 class="mb--half">Товар скопирован в список</h4>';
+			break;
+		case 'peremastov': 
+			var text='<h4 class="mb--half">Товар перенесен в список</h4>';
+			break; 
+		case 'delmastov': 
+			var text='<h4 class="mb--half">Товар удален из списка</h4>';
+			break;	
+		case 'newlist': 
+			var text='<h4 class="mb--half">Список создан</h4>';
+			break;
+		case 'editlist': 
+			var text='<h4 class="mb--half">Список изменён</h4>';
+			break;
+		case 'dellist': 
+			var text='<h4 class="mb--half">Список удален</h4>';
+			break;
+		case 'addListCatalog': 
+			var text='<h4 class="mb--half">Товар добавлен в список</h4>';
+			break;
+		case 'addCompare': 
+			var text='<h4 class="mb--half">Товар добавлен в список</h4>';
+			break;					
+		default:
+			var text='<h4 class="mb--half">действие выполнено</h4>';
+		}		
+		//actListMenu.setAttribute('data-actab', actab);
+		var actions=document.getElementById("action-alert");
+		actions.innerHTML=text;
+		actionOk();
+		/*setTimeout(function(){actions.style.width = "0%";actions.innerHTML='';}, 3000); */
+	}
+	
+}
+</script>

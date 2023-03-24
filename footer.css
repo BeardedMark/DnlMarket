@@ -1,0 +1,90 @@
+/* Футер */
+
+.footer {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: #F4F5F6;
+}
+
+.footer img {
+  display: block;
+}
+
+.footer-title {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+
+
+/* Футер / Списки страниц */
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.footer-list>* {
+  margin-bottom: 10px;
+}
+
+.footer-list>*:last-child {
+  margin-bottom: 0;
+}
+
+
+
+/* Футер / контент */
+
+.footer-content {
+  padding-bottom: 0;
+}
+
+.footer-content>* {
+  margin-bottom: 20px;
+}
+
+.footer-content>*:last-child {
+  margin-bottom: 0;
+}
+
+
+
+/* Футер / Список ссылок */
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links>* {
+  margin-right: 1vw;
+}
+
+.footer-links>*:last-child {
+  margin-right: 0;
+}
+
+
+
+/* Футер / Список социалок */
+
+.footer-social {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-social>* {
+  margin-right: 4vw;
+}
+
+.footer-social>*:last-child {
+  margin-right: 0;
+}

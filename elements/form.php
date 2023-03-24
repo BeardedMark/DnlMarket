@@ -3,8 +3,7 @@
         <div class="row">
             <div class="col col-12 questions__feedback">
                 <div class="col-inner">
-                    <h2 class="h3 mb--half">Обратная связь</h2>
-                    <p class="dark-grey-text mb--medium">Воспользуйтесь формой, чтобы задать ваш вопрос</p>
+
                     <form action="" class="float-label-form">
                         <div class="row">
                             <div class="col col-12 col-md-6 float-label-form__input">

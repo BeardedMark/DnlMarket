@@ -1,0 +1,83 @@
+.header {
+    background: white;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.header img {
+    display: block;
+}
+.header-content > a{
+    
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    border-bottom: 1px solid #BBBBBB;
+}
+
+.header-content>* {
+    margin: 0px 20px 0px 20px;
+}
+
+.header-content>*:first-child {
+    margin-left: 0;
+}
+
+.header-content>*:last-child {
+    margin-right: 0;
+}
+
+.header-city {
+    display: flex;
+    align-items: center;
+}
+
+.header-city>*:first-child {
+    margin-right: 16px;
+}
+
+.header-city .city {
+    width: auto;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.header-city .phone {
+    font-size: 14px;
+    text-decoration: none;
+    color: #1B1B1B;
+}
+
+
+
+.header-btn {
+    border: 1px solid #BBBBBB;
+    border-radius: 6px;
+    padding: 10px 16px 10px 16px;
+    color: #1B1B1B;
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-btn:hover {
+    background: #f1f1f1;
+    border: 1px solid #BBBBBB;
+}
+
+.header-btn>*:first-child {
+    margin-right: 16px;
+    padding: 0;
+
+}

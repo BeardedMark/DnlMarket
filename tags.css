@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+*,
+::after,
+::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #1B1B1B;
+}
+
+main {
+    margin-bottom: 120px;
+}
+
+h1,
+.h1 {
+    font-size: 46px;
+    margin-bottom: 50px;
+}
+
+h2,
+.h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+h3,
+.h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+h4,
+.h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+h5,
+.h5 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}

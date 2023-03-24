@@ -1,6 +1,18 @@
 /* .row {
-    border: 1px rgba(255, 0, 0, 0.3) dashed;
+    border-bottom: 2px rgb(0, 0, 0) solid;
 } */
-.col, .col-6{
-    /* border: 1px rgba(0, 162, 255, 0.5) dashed; */
+.col *{
+    background: rgba(0, 162, 255, 0.1);
+    border: 1px rgba(0, 162, 255, 0.5) solid;
+    /* padding: 1px; */
+}
+.col{
+    border: 1px rgba(0, 162, 255, 0.5) dashed;
+}
+.col *:hover{
+    border: 1px rgb(255, 0, 0) solid;
+}
+a{
+    background: rgba(255, 0, 0, 0.1) !important;
+    /* border: 1px rgba(255, 0, 0, 0.5) solid !important; */
 }

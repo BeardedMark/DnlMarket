@@ -1,4 +1,6 @@
-<div id="popup-catalog" class="popup popup_full">
+<div class="shade">
+    <div class="popup popup-left">
+    <div id="popup-catalog" class="popup_full">
     <div class="popup__wrapper_outer">
         <div class="popup__wrapper_inner">
             <div class="popup__wrapper">
@@ -937,5 +939,7 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
     </div>
 </div>

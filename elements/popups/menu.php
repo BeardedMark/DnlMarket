@@ -1,4 +1,4 @@
-<div id="menu" class="popup popup-right">
+<div id="menu" class="popup popup-top">
     <a href="#" class="popup-shade"></a>
     <a href="#" class="popup-close"></a>
     <div class="popup-content">

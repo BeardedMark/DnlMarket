@@ -6,18 +6,18 @@
     font-size: 16px;
 }
 
-.crumb-list>* {
+.crumb-list>.crumb {
     position: relative;
     padding-right: 20px;
     margin-right: 16px;
 }
 
-.crumb-list>*:last-child {
+.crumb-list>.crumb:last-child {
     cursor: default;
     color: #BBBBBB;
 }
 
-.crumb-list>*::after {
+.crumb-list>.crumb::after {
     content: '';
     display: block;
     position: absolute;
@@ -33,6 +33,6 @@
     height: 6px;
 }
 
-.crumb-list>*:last-child::after {
+.crumb-list>.crumb:last-child::after {
     display: none;
 }

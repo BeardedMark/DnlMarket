@@ -1,22 +1,16 @@
+/* Шапка */
+
 .header {
-    background: white;
     width: 100%;
     top: 0;
-    z-index: 999;
+    z-index: 800;
+    /* position: absolute; */
 }
 
-.header img {
-    display: block;
-}
-.header-content > a{
-    
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+/* Шапка / Содержимое */
 
 .header-content {
+    background: white;
     display: flex;
     align-items: center;
     height: 100px;
@@ -24,7 +18,7 @@
 }
 
 .header-content>* {
-    margin: 0px 20px 0px 20px;
+    margin: 0px 12px;
 }
 
 .header-content>*:first-child {
@@ -35,22 +29,27 @@
     margin-right: 0;
 }
 
-.header-city {
+
+
+/* Шапка / Город */
+
+.header-contact {
     display: flex;
     align-items: center;
 }
 
-.header-city>*:first-child {
+.header-contact>.header-contact-ico {
     margin-right: 16px;
 }
 
-.header-city .city {
+.header-contact-city {
     width: auto;
     font-size: 18px;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
 }
 
-.header-city .phone {
+.header-contact-phone {
+    display: block;
     font-size: 14px;
     text-decoration: none;
     color: #1B1B1B;
@@ -58,10 +57,12 @@
 
 
 
+/* Шапка / Кнопка каталога */
+
 .header-btn {
     border: 1px solid #BBBBBB;
     border-radius: 6px;
-    padding: 10px 16px 10px 16px;
+    padding: 10px 16px;
     color: #1B1B1B;
     font-size: 18px;
     font-weight: 300;
@@ -69,6 +70,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: .5s;
 }
 
 .header-btn:hover {
@@ -79,5 +81,21 @@
 .header-btn>*:first-child {
     margin-right: 16px;
     padding: 0;
+}
 
+
+
+/* Шапка / Ссылка */
+
+.header-link{
+    padding: 8px 8px;
+}
+.header-link:hover svg *{
+    stroke: rgb(186, 130, 88);
+}
+.header-link:last-child{
+    padding-right: 0;
+}
+.header-link:first-child{
+    padding-left: 0;
 }

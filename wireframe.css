@@ -1,0 +1,43 @@
+*{
+    color: transparent !important;
+    border-radius: 3px;
+}
+.col *{
+    /* background: rgba(0, 162, 255, 0.1); */
+    border: 1px rgba(0, 162, 255, 0.5) solid;
+    
+}
+.col {
+    background: rgba(0, 162, 255, 0.1);
+    border: 1px rgba(0, 162, 255, 0.5) dashed ;
+}
+
+
+.col *:hover {
+    border: 1px rgb(255, 0, 0) solid !important;
+}
+
+a {
+    background: rgba(255, 0, 0, 0.1) !important;
+    border: 1px transparent dotted !important;
+}
+
+h1,
+h2,
+h3,
+h4{
+    background: rgba(225, 0, 255, 0.1) !important;
+    border: 1px transparent dotted !important;
+}
+
+p{
+    background: rgba(0, 0, 0, 0.1) !important;
+    border: 1px transparent solid !important;
+}
+
+img,
+svg,
+canvas{
+    background: rgba(9, 255, 0, 0.1) !important;
+    border: 1px rgba(9, 255, 0, 0.5) solid !important;
+}

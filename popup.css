@@ -1,0 +1,98 @@
+.popup {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 900;
+    pointer-events: none;
+}
+
+.popup:target {
+    pointer-events: auto;
+}
+
+
+
+.popup-shade {
+    position: fixed;
+    transition: .5s;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: -1;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.popup:target .popup-shade {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+.popup-content {
+    position: fixed;
+    background: white;
+    padding: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    transition: .5s;
+
+    margin: auto;
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.1));
+}
+
+
+
+.popup-right .popup-content {
+    left: auto;
+    right: -100%;
+    max-width: 60%;
+}
+
+.popup-right:target .popup-content {
+    right: 0;
+}
+
+
+
+.popup-left .popup-content{
+    right: auto;
+    left: -100%;
+    max-width: 60%;
+}
+
+.popup-left:target .popup-content {
+    left: 0;
+}
+
+
+
+.popup-top .popup-content{
+    bottom: auto;
+    top: -100%;
+    max-height: 60%;
+}
+
+.popup-top:target .popup-content {
+    top: 0;
+}
+
+
+
+.popup-bottom .popup-content{
+    top: auto;
+    bottom: -100%;
+    max-height: 60%;
+}
+
+.popup-bottom:target .popup-content {
+    bottom: 0;
+}

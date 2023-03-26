@@ -1,10 +1,9 @@
-<footer>
-    <section class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col col-12 footer-content">
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col col-12">
+                <div class="footer-content">
                     <div class="row">
-                        
                         <div class="col col-12 col-sm-6 col-lg-auto">
                             <p class="footer-title">Компания</p>
                             <ul class="footer-list">
@@ -61,7 +60,7 @@
                             </ul>
                         </div>
 
-                        <div class="col col-12 col-md-auto d-flex justify-content-center">
+                        <div class="col col-12 col-md-auto d-flex">
                             <ul class="footer-social">
                                 <li><a href="#" target="_blank"><img src="img/svg/telegram.svg" alt=""></a></li>
                                 <li><a href="#" target="_blank"><img src="img/svg/telegram.svg" alt=""></a></li>
@@ -71,9 +70,9 @@
                             </ul>
                         </div>
                     </div>
-
                 </div>
+
             </div>
         </div>
-    </section>
-</footer>
+    </div>
+</div>

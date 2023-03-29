@@ -6,7 +6,7 @@
     right: 0;
     bottom: 0;
 
-    z-index: 900;
+    z-index: 9000;
     pointer-events: none;
 }
 
@@ -29,7 +29,8 @@
 }
 
 .popup:target .popup-shade {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, .3);
+    /* backdrop-filter: blur(3px); */
 }
 
 
@@ -42,6 +43,9 @@
     left: 0;
     right: 0;
     bottom: 0;
+
+    min-width: 30%;
+    min-height: 30%;
 
     transition: .5s;
 
@@ -63,7 +67,7 @@
 
 
 
-.popup-left .popup-content{
+.popup-left .popup-content {
     right: auto;
     left: -100%;
     max-width: 60%;
@@ -75,7 +79,7 @@
 
 
 
-.popup-top .popup-content{
+.popup-top .popup-content {
     bottom: auto;
     top: -100%;
     max-height: 60%;
@@ -87,7 +91,7 @@
 
 
 
-.popup-bottom .popup-content{
+.popup-bottom .popup-content {
     top: auto;
     bottom: -100%;
     max-height: 60%;

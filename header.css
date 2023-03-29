@@ -1,35 +1,28 @@
-/* Шапка */
-
 .header {
-    width: 100%;
-    top: 0;
-    z-index: 800;
-    /* position: absolute; */
+
+    background-color: #ffffff;
+    transition: 1s;
 }
+
+.header-scroll-up {
+    top: -100px;
+}
+
+.header-scroll-down {
+    bottom: -100px;
+}
+
+
 
 /* Шапка / Содержимое */
 
 .header-content {
-    background: white;
-    display: flex;
-    align-items: center;
-    height: 100px;
+    padding: 20px 0;
     border-bottom: 1px solid #BBBBBB;
+
+    border-top: 1px solid #BBBBBB;
+    margin: -1px 0;
 }
-
-.header-content>* {
-    margin: 0px 12px;
-}
-
-.header-content>*:first-child {
-    margin-left: 0;
-}
-
-.header-content>*:last-child {
-    margin-right: 0;
-}
-
-
 
 /* Шапка / Город */
 
@@ -87,15 +80,11 @@
 
 /* Шапка / Ссылка */
 
-.header-link{
-    padding: 8px 8px;
+.header-link {
+    display: block;
+    padding: 8px;
 }
-.header-link:hover svg *{
+
+.header-link:hover svg * {
     stroke: rgb(186, 130, 88);
-}
-.header-link:last-child{
-    padding-right: 0;
-}
-.header-link:first-child{
-    padding-left: 0;
 }

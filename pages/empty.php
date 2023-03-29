@@ -1,6 +1,5 @@
 <section>
-    <div class="container">
-        <div class="row">
+    <div class="row">
             <div class="col col-8">
                 <h1>Заголовок 1</h1>
                 <h2>Заголовок 2</h2>
@@ -14,5 +13,4 @@
                 <a href="#" class="link">Ссылка</a>
             </div>
         </div>
-    </div>
 </section>

@@ -1,0 +1,50 @@
+.note {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.note-cutline {
+    border-top: 1px solid #000000;
+    padding-top: 10px;
+}
+
+.note-img{
+    padding-top: 100%;
+    margin-top: -100%;
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+}
+
+.note-context{
+    background-color: #f1f1f1;
+    padding: 30px;    
+    height:100%;
+    transition: .5s;
+}
+
+.note-stat {
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 120%;
+}
+
+.note-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    margin: 0;
+}
+.note-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+}

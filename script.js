@@ -55,10 +55,46 @@
 // });
 
 const mainContainer = $("#main");
-const url = "pages/customers.php?id=1&title=John";
+const url = "pages/home.php";
 
-$.get(url, function(data) {
-    mainContainer.html(data);
-  }).fail(function() {
-    console.error("Произошла ошибка при загрузке данных");
-  });
+$.get(url, function (data) {
+  mainContainer.html(data);
+}).fail(function () {
+  console.error("Произошла ошибка при загрузке данных");
+});
+
+var lastScrollTop = 0;
+var isHide = false;
+var fixedTop = $('.fixed-top');
+var fixedBottom = $('.fixed-bottom');
+var height = fixedTop.height();
+
+$(window).scroll(function() {
+    var currentScrollTop = $(this).scrollTop();
+    
+    if (currentScrollTop > lastScrollTop && currentScrollTop > 800) {
+        if (!isHide) {
+            fixedTop.animate({
+                top: -fixedTop.height() + 'px'
+            }, 300);
+
+            fixedBottom.animate({
+              bottom: -fixedBottom.height() + 'px'
+          }, 300);
+            isHide = true;
+        } 
+    } else {
+        if (isHide) {
+          fixedTop.animate({
+              top: '0px'
+          }, 300);
+
+          fixedBottom.animate({
+            bottom: '0px'
+        }, 300);
+          isHide = false;
+      } 
+    }
+
+    lastScrollTop = currentScrollTop;
+});
